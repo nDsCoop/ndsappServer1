@@ -1,0 +1,8 @@
+{{#if error}}
+    <p>{{error}}</p>
+{{/if}}
+<p>Please enter your phone number (in international format, starting with nDsApp receive a verification code:</p>
+<form method="post" action="/sendcode/internumber">
+    <input type="tel" name="number" />
+    <input type='submit' value="Send Code" />
+</form>

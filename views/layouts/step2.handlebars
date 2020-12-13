@@ -1,0 +1,11 @@
+{{#if error}}
+    <p>{{error}}</p>
+{{/if}}
+<p>We’ll send a one time verification code to confirm your mobile number for security. 
+    After verifying, you will get free testing credits.</p>
+<p>Please enter the code here:</p>
+<form method="post" action="/sendcode/checknumber">
+    <input type="hidden" name="id" value="{{id}}"/>
+    <input type="text" name="token" />
+    <input type='submit' value="Check Code" />
+</form>
